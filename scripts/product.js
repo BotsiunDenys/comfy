@@ -1,4 +1,4 @@
-import furnitureList from './fetch.js';
+import furnitureList from './furnish.js';
 import createInfo from './displayItemInfo.js';
 import { displayCart, hideCart, cartIcon, closeCart } from './displayCart.js';
 import { checkBox, checkBoxChange, resize } from './burgerMenu.js';

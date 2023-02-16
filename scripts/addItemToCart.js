@@ -1,4 +1,4 @@
-import furnitureList from './fetch.js';
+import furnitureList from './furnish.js';
 import createItemDOM from './displayCart.js';
 const container = document.querySelector('.item-card_container'); // container for item info
 const cartItemContainer = document.querySelector('.cart-items'); // container for item in cart

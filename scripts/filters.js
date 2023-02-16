@@ -1,5 +1,5 @@
 import displayItems from './displayProducts.js';
-import furnitureList from './fetch.js';
+import furnitureList from './furnish.js';
 const priceFilter = document.querySelector('.range');
 const priceValue = document.querySelector('.value');
 const input = document.querySelector('.search');
@@ -42,4 +42,11 @@ const displayCompany = (company) => {
     displayItems(furnitureList);
   }
 };
-export {input, priceValue, priceFilter, displayCompany, priceChange, inputChange}
+export {
+  input,
+  priceValue,
+  priceFilter,
+  displayCompany,
+  priceChange,
+  inputChange,
+};

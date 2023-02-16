@@ -1,4 +1,4 @@
-import furnitureList from './fetch.js';
+import furnitureList from './furnish.js';
 import displayItems from './displayProducts.js';
 import {
   input,
