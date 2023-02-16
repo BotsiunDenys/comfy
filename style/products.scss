@@ -11,7 +11,7 @@
   }
   @media (max-width: $responsive4) {
     flex-direction: column;
-    margin: 20px 90px;
+    margin: 20px 65px;
   }
 }
 .filters {
@@ -77,6 +77,8 @@
       margin-left: 40px;
     }
     @media (max-width: $responsive4) {
+      box-shadow: none;
+      border: none;
       margin-top: 50px;
       margin-left: 0;
     }
@@ -100,12 +102,15 @@
       .more_info {
         display: block;
       }
+      @media (max-width: $responsive4) {
+        box-shadow: none;
+      }
     }
     .more_info {
       position: absolute;
       display: none;
-      top: 40%;
-      left: 40%;
+      top: 35%;
+      left: 45%;
       padding: 8px;
       background-color: rgba(186, 94, 44, 0.692);
       border-radius: 50%;

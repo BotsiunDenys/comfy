@@ -14,7 +14,7 @@
   @media (max-width: 1024px) {
     .item-card {
       margin: 60px 100px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .item-card {
       flex-direction: column;
       text-align: center; } }

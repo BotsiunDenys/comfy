@@ -16,7 +16,7 @@
   @media (max-width: 1024px) {
     .main_about {
       margin: 50px 200px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .main_about {
       margin: 30px 100px; } }
   .main_about .title-about {

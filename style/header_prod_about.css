@@ -36,7 +36,7 @@
     padding-right: 180px;
     font-family: "Lobster", sans-serif;
     font-size: 24px; }
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
       .menu_title_cart_logo {
         padding-right: 50px; } }
     @media (max-width: 650px) {

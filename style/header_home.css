@@ -23,6 +23,7 @@
       padding: 20px 100px; } }
   @media (max-width: 650px) {
     .menu_title_cart {
+      justify-content: space-around;
       padding: 20px 50px; } }
   .menu_title_cart .items {
     display: flex;
@@ -41,7 +42,7 @@
     padding-right: 180px;
     font-family: "Lobster", sans-serif;
     font-size: 24px; }
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
       .menu_title_cart_logo {
         padding-right: 50px; } }
     @media (max-width: 650px) {
@@ -64,9 +65,6 @@
       height: 18px;
       top: -10px;
       right: -10px; }
-    @media (max-width: 650px) {
-      .menu_title_cart_cart {
-        margin-right: 80px; } }
 
 .header_home {
   padding: 250px 0 250px 200px; }
