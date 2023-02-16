@@ -1,0 +1,128 @@
+@import "./main.scss";
+
+.main_products {
+  margin: 50px 200px;
+  display: flex;
+  @media (max-width: $responsive1) {
+    margin: 40px 100px;
+  }
+  @media (max-width: $responsive3) {
+    margin: 20px 100px;
+  }
+  @media (max-width: $responsive4) {
+    flex-direction: column;
+    margin: 20px 90px;
+  }
+}
+.filters {
+  padding-right: 40px;
+  @media (max-width: $responsive1) {
+    padding-right: 0;
+  }
+  .search {
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: $header-color;
+  }
+  .decoration-type {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .decoration-types {
+    list-style-type: none;
+    .decoration + .decoration {
+      margin-top: 10px;
+    }
+    .decoration {
+      color: $font-color;
+    }
+    span:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .price-filter {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .value {
+    font-size: 18px;
+    color: $font-color;
+  }
+}
+.main_goods {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: $responsive2) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: $responsive3) {
+    grid-template-columns: 1fr;
+  }
+  .featured-item {
+    text-align: center;
+    position: relative;
+    border: 1px solid $color-theme;
+    border-radius: 15px;
+    box-shadow: 0 0 4px $color-theme;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    @media (max-width: $responsive2) {
+      margin-left: 40px;
+    }
+    @media (max-width: $responsive4) {
+      margin-top: 50px;
+      margin-left: 0;
+    }
+    .popular_item {
+      border-radius: 15px 15px 0 0;
+      width: 250px;
+      height: 250px;
+    }
+    .name {
+      color: $item-name-color;
+      font-size: 20px;
+      padding: 10px 0;
+    }
+    .price {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 8px $color-theme;
+      .more_info {
+        display: block;
+      }
+    }
+    .more_info {
+      position: absolute;
+      display: none;
+      top: 40%;
+      left: 40%;
+      padding: 8px;
+      background-color: rgba(186, 94, 44, 0.692);
+      border-radius: 50%;
+      animation: 0.3s item-appearing ease;
+      img {
+        width: 25px;
+        height: 20px;
+      }
+    }
+  }
+}
+.search_error {
+  position: absolute;
+  top: 50%;
+  margin-left: 200px;
+  font-size: 40px;
+  width: 800px;
+  text-align: center;
+  color: $font-color;
+}

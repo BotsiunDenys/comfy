@@ -1,0 +1,77 @@
+@import "./main.scss";
+
+.menu_title_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+  @media (max-width: $responsive1) {
+    padding: 20px 100px;
+  }
+  @media (max-width: $responsive4) {
+    padding: 20px 30px;
+  }
+  .items {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    .item + .item {
+      padding-left: 50px;
+    }
+    .link {
+      color: black;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        color: $color-theme;
+      }
+    }
+  }
+  &_logo {
+    padding-right: 180px;
+    font-family: $custom-font-family;
+    font-size: 24px;
+    @media (max-width: $responsive3) {
+      padding-right: 50px;
+    }
+    @media (max-width: $responsive4) {
+      padding-right: 0;
+    }
+  }
+  &_cart {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    @media (max-width: $responsive4) {
+      margin-right: 20px;
+    }
+    .goods-quantity {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 14px;
+      position: absolute;
+      background-color: $color-theme;
+      width: 18px;
+      height: 18px;
+      top: -10px;
+      right: -10px;
+    }
+  }
+}
+.header_products,
+.header_about {
+  font-size: 24px;
+  color: $font-color;
+  padding: 80px 200px;
+  background-color: $header-color;
+  @media (max-width: $responsive1) {
+    padding: 50px 100px;
+  }
+  @media (max-width: $responsive4) {
+    padding: 30px 30px;
+  }
+}

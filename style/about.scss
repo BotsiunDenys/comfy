@@ -1,0 +1,29 @@
+@import "./main.scss";
+
+.main_about {
+  margin: 100px 600px;
+  @media (max-width: $responsive1) {
+    margin: 100px 400px;
+  }
+  @media (max-width: $responsive2) {
+    margin: 50px 200px;
+  }
+  @media (max-width: $responsive3) {
+    margin: 30px 100px;
+  }
+  .title-about {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    &::before {
+      content: "/ ";
+      color: $color-theme;
+    }
+  }
+  .desc-about {
+    color: $font-color;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

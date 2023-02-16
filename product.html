@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comfy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/header_prod_about.css" />
+    <link rel="stylesheet" href="style/item_info.css" />
+    <link rel="stylesheet" href="style/cart.css" />
+    <link rel="stylesheet" href="style/burger-menu.css" />
+  </head>
+  <body>
+    <div class="store">
+      <header class="header">
+        <div class="menu_title_cart header_menu_title_cart">
+          <div class="menu-wrapper">
+            <input type="checkbox" class="check-menu" id="check-menu" hidden />
+            <label for="check-menu" class="lines">
+              <div class="menu-lines first"></div>
+              <div class="menu-lines second"></div>
+              <div class="menu-lines third"></div>
+              <div class="menu-lines fourth"></div>
+            </label>
+            <nav class="menu menu_title_cart_menu">
+              <ul class="items menu_items">
+                <li class="item menu_item" id="home_btn">
+                  <a href="index.html" class="link">Home</a>
+                </li>
+                <li class="item menu_item" id="show">
+                  <a href="products.html" class="link">Products</a>
+                </li>
+                <li class="item menu_item" id="about_btn">
+                  <a href="about.html" class="link">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="logo menu_title_cart_logo">comfy</div>
+          <div class="cart menu_title_cart_cart">
+            <img src="img/cart-black.png" class="cart-icon" />
+            <div class="goods-quantity">0</div>
+          </div>
+        </div>
+        <div class="products header_products">
+          <p class="title-products products_title-products">Home / Products</p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="item-card_container"></div>
+      </main>
+      <div class="cart-overlay">
+        <aside class="cart-page">
+          <header class="head cart-page_head">
+            <p class="close-cart">&#215;</p>
+            <p class="bag-text">Your Bag</p>
+          </header>
+          <div class="cart-items cart-page_cart-items"></div>
+          <footer class="foot cart-page_foot">
+            <p class="total-price">Total: $0</p>
+            <button class="checkout">CHECKOUT</button>
+          </footer>
+        </aside>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/addItemToCart.js"></script>
+    <script type="module" src="scripts/product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+@import "./main.scss";
+.burger-wrapper {
+  width: 60px;
+  border-radius: 30px;
+  background: $color-theme;
+  position: relative;
+  height: 40px;
+  .lines {
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+    .menu-lines {
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      background-color: white;
+      top: 10px;
+    }
+    .second,
+    .third {
+      top: 20px;
+    }
+    .fourth {
+      top: 30px;
+    }
+  }
+  .main-menu {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    background: $color-theme;
+    .burger-menu-item {
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .link {
+      color: rgba(255, 255, 255, 0.726);
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
+.check-menu:checked ~ .main-menu {
+  max-height: 200px;
+  font-size: 16px;
+}

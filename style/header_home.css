@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@keyframes item-appearing {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.header {
+  background: url("../img/homeBG.jpg") no-repeat center;
+  background-size: cover;
+  color: white; }
+
+.menu_title_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px; }
+  @media (max-width: 1024px) {
+    .menu_title_cart {
+      padding: 20px 100px; } }
+  @media (max-width: 650px) {
+    .menu_title_cart {
+      padding: 20px 50px; } }
+  .menu_title_cart .items {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px; }
+    .menu_title_cart .items .item + .item {
+      padding-left: 50px; }
+  .menu_title_cart .link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s; }
+    .menu_title_cart .link:hover {
+      cursor: pointer;
+      color: #ba5d2c; }
+  .menu_title_cart_logo {
+    padding-right: 180px;
+    font-family: "Lobster", sans-serif;
+    font-size: 24px; }
+    @media (max-width: 768px) {
+      .menu_title_cart_logo {
+        padding-right: 50px; } }
+    @media (max-width: 650px) {
+      .menu_title_cart_logo {
+        padding-right: 0; } }
+  .menu_title_cart_cart {
+    display: flex;
+    position: relative;
+    cursor: pointer; }
+    .menu_title_cart_cart .goods-quantity {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 14px;
+      position: absolute;
+      background-color: #ba5d2c;
+      width: 18px;
+      height: 18px;
+      top: -10px;
+      right: -10px; }
+    @media (max-width: 650px) {
+      .menu_title_cart_cart {
+        margin-right: 80px; } }
+
+.header_home {
+  padding: 250px 0 250px 200px; }
+  @media (max-width: 1440px) {
+    .header_home {
+      padding: 200px 0 200px 100px; } }
+  @media (max-width: 650px) {
+    .header_home {
+      padding: 100px 0 100px 50px; } }
+  .header_home .title-home {
+    font-family: "Lobster", sans-serif;
+    font-size: 40px; }
+  .header_home .desc {
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 20px; }
+  .header_home .show {
+    background-color: inherit;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 5px 8px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    transition: 0.3s; }
+    .header_home .show:hover {
+      border-color: #ba5d2c;
+      cursor: pointer; }
+      .header_home .show:hover .link {
+        color: #ba5d2c; }
+    .header_home .show .link {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s; }

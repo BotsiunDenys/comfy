@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@keyframes item-appearing {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease; }
+
+.cart-page {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  width: 20%;
+  min-width: 300px;
+  height: 100%;
+  background-color: #f1f5f8;
+  overflow: scroll;
+  transform: translateX(100%);
+  transition: all 0.5s ease; }
+  @media (max-width: 650px) {
+    .cart-page {
+      width: 100%; } }
+  .cart-page_head {
+    margin-bottom: 20px; }
+  .cart-page .close-cart {
+    font-size: 40px;
+    font-weight: bold;
+    color: #617d98;
+    margin-left: 15px;
+    cursor: pointer; }
+  .cart-page .bag-text {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    color: #5d6678; }
+  .cart-page_cart-items {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 15px;
+    margin: 15px; }
+  .cart-page .cart-img-item {
+    width: 75px;
+    height: 50px;
+    border: none;
+    border-radius: 3px; }
+  .cart-page .name-item {
+    font-size: 20px; }
+  .cart-page .price-item {
+    font-size: 16px;
+    color: #607c98; }
+  .cart-page .remove-item {
+    font-size: 16px;
+    color: #607c98;
+    cursor: pointer; }
+  .cart-page .quantity-controller {
+    font-size: 16px;
+    text-align: center; }
+    .cart-page .quantity-controller .add,
+    .cart-page .quantity-controller .substract {
+      font-size: 12px;
+      color: #ba5d2c;
+      cursor: pointer; }
+  .cart-page_foot {
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-align: center; }
+  .cart-page .total-price {
+    font-family: "Lobster", sans-serif;
+    font-size: 26px; }
+  .cart-page .checkout {
+    padding: 5px 80px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: #ba5d2c;
+    color: white;
+    transition: 0.3s; }
+    .cart-page .checkout:hover {
+      cursor: pointer;
+      background-color: rgba(186, 94, 44, 0.767); }
+
+.show {
+  transform: translateX(0%); }
+
+.overlay-show {
+  background-color: rgba(0, 0, 0, 0.404);
+  z-index: 100; }
